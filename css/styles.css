@@ -149,12 +149,10 @@ a {
     height: 796px;
   }
   .mobile-menu-container {
-    max-width: 428px;
+    min-width: 428px;
     position: relative;
     padding-top: 80px;
     padding-bottom: 40px;
-    padding-left: 40px;
-    padding-right: 35px;
   }
   .mobile-menu-list {
     margin-bottom: 284px;
