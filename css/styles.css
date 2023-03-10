@@ -222,7 +222,7 @@ a {
     gap: 56px; */
     width: 320px;
     max-width: 100%;
-    gap: 56px;
+    justify-content: space-between;
   }
   .social-list-item-mobile > a {
     display: flex;
