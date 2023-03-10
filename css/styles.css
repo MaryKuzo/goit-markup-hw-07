@@ -149,10 +149,12 @@ a {
     height: 796px;
   }
   .mobile-menu-container {
-    min-width: 428px;
+    width: 100%;
+    max-width: 100%;
     position: relative;
     padding-top: 80px;
     padding-bottom: 40px;
+    padding-left: 40px;
   }
   .mobile-menu-list {
     margin-bottom: 284px;
@@ -170,6 +172,7 @@ a {
     text-transform: capitalize;
     display: block;
     text-decoration: none;
+    max-width: 151px;
   }
   .mobile-menu-list .mobile-menu-link:hover,
   .mobile-menu-link:focus {
@@ -199,6 +202,7 @@ a {
   }
   .address-mobile {
     display: block;
+    width: 100%;
   }
   .address-item:not(:last-child) {
     margin-bottom: 40px;
@@ -214,6 +218,7 @@ a {
     display: flex;
     align-items: center;
     gap: 56px;
+    max-width: 100%;
   }
   .social-list-item-mobile > a {
     display: flex;
