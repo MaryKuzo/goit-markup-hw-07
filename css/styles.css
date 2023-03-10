@@ -55,6 +55,7 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
+  margin: 0 auto;
 }
 .section {
   padding-top: 120px;
@@ -75,7 +76,7 @@ a {
 /* site-nav */
 @media screen and (max-width: 767px) {
   .container {
-    width: 100%;
+    width: 428px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
@@ -103,6 +104,8 @@ a {
   .main-items-header {
     padding-top: 24px;
     padding-bottom: 24px;
+    width: 428px;
+    margin: 0 auto;
   }
   .mobile-menu-open {
     border: none;
@@ -326,6 +329,7 @@ a {
 
   .team-section {
     background-color: var(--light);
+    width: 428px;
   }
   .team-section-cards {
     display: block;
