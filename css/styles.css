@@ -269,6 +269,7 @@ a {
       max-width: 428px;
     }
   }
+
   .hero-title {
     color: var(--web-background);
     font-weight: 700;
@@ -281,6 +282,7 @@ a {
     margin: 0 auto;
     margin-bottom: 72px;
   }
+
   ._container .button {
     display: flex;
   }
@@ -404,8 +406,8 @@ a {
   .customers-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 72px 16px;
-    justify-content: center;
+    row-gap: 72px;
+    justify-content: space-between;
   }
   .container-tablet {
     max-width: 396px;
