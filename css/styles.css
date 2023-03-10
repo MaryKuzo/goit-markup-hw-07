@@ -72,11 +72,11 @@ a {
   letter-spacing: 0.02em;
   margin-bottom: 72px;
 }
+
 /* header */
 /* site-nav */
 @media screen and (max-width: 767px) {
   .container {
-    width: 428px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
@@ -89,6 +89,7 @@ a {
   .section {
     padding-top: 96px;
     padding-bottom: 96px;
+    margin: 0 auto;
   }
   .site-nav {
     display: none;
@@ -100,12 +101,13 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
   .main-items-header {
     padding-top: 24px;
     padding-bottom: 24px;
-    width: 428px;
     margin: 0 auto;
+    width: 100%;
   }
   .mobile-menu-open {
     border: none;
@@ -241,7 +243,6 @@ a {
       url(../images/hero/Dark-bg-mobile.webp);
     padding-top: 112px;
     padding-bottom: 112px;
-    width: 428px;
   }
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -253,6 +254,7 @@ a {
           rgba(46, 47, 66, 0.7)
         ),
         url(../images/hero/Dark-bg-mobile2x.webp);
+      max-width: 428px;
     }
   }
   .hero-title {
@@ -263,7 +265,7 @@ a {
     letter-spacing: 0.02em;
     display: block;
     text-align: center;
-    width: 320px;
+    max-width: 320px;
     margin: 0 auto;
     margin-bottom: 72px;
   }
@@ -298,8 +300,16 @@ a {
   .our-features-icons-back {
     display: none;
   }
+  .features-list-main {
+    margin: 0 auto;
+  }
   .features-list {
     display: block;
+    margin: 0 auto;
+  }
+  .features-list .list {
+    max-width: 396px;
+    margin: 0 auto;
   }
   .features-list .list:not(:last-child) {
     margin-bottom: 72px;
@@ -314,7 +324,6 @@ a {
     margin-bottom: 8px;
   }
   .features-list-text {
-    width: 396px;
     align-self: stretch;
   }
   /* our work */
@@ -329,7 +338,6 @@ a {
 
   .team-section {
     background-color: var(--light);
-    width: 428px;
   }
   .team-section-cards {
     display: block;
@@ -351,7 +359,6 @@ a {
   }
   .team-cards:not(:last-child) {
     margin-bottom: 72px;
-    margin-right: 0;
   }
   .team-cards-list {
     display: block;
@@ -386,10 +393,14 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 72px 16px;
+    justify-content: center;
+  }
+  .container-tablet {
+    max-width: 396px;
   }
   .customers-item {
     display: block;
-    width: 190px;
+    width: calc((100% - 16px) / 2);
   }
   .customers-link {
     display: flex;
@@ -402,11 +413,16 @@ a {
     transition: border-color var(--transition-dur-func);
   }
   /* footer */
+
   .footer-main-nav {
     padding-bottom: 96px;
     padding-top: 96px;
+    margin: 0 auto;
   }
-
+  .footer-paragraph {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .footer-logo-main {
     display: block;
     margin: 0 auto;
@@ -424,7 +440,9 @@ a {
   .footer-social-media {
     text-align: center;
   }
-
+  .footer-social-list {
+    justify-content: center;
+  }
   /* ================= */
   .footer-subscribe-field {
     display: block;
@@ -436,7 +454,7 @@ a {
   }
 
   .footer-subscribe-input {
-    width: 396px;
+    width: 100%;
     margin-bottom: 16px;
   }
 
@@ -688,11 +706,12 @@ a {
   .footer-main-nav {
     padding-bottom: 96px;
     padding-top: 96px;
-
     justify-content: center;
-    display: block;
   }
-
+  .footer-main {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .footer-logo-main {
     display: block;
     margin-bottom: 72px;
@@ -703,6 +722,7 @@ a {
 
   .footer-media {
     margin-left: 24px;
+    display: inline-block;
   }
   .footer-social-media {
     text-align: center;
@@ -839,6 +859,9 @@ a {
   .footer-media {
     margin-right: 80px;
   }
+  .footer-main {
+    display: flex;
+  }
   .footer-subscribe-label {
     margin-right: 24px;
   }
@@ -848,7 +871,11 @@ a {
   .footer-button-subscribe {
     display: flex;
   }
-
+  .footer-subscribe-field {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
   .hero {
     padding-top: 188px;
     padding-bottom: 188px;
@@ -1125,7 +1152,6 @@ a {
 /* ==========our team============= */
 .team-section {
   background-color: var(--light);
-  max-width: 100%;
 }
 .social-list-link {
   display: flex;
@@ -1466,8 +1492,8 @@ a {
 }
 .footer-main {
   background-color: var(--dark);
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
 }
 /* .footer-logo-main {
   display: inline-block;
@@ -1490,7 +1516,7 @@ a {
   margin-top: 16px;
 }
 .footer-media {
-  display: inline-block;
+  /* display: inline-block; */
 
   justify-content: center;
   align-items: center;
@@ -1532,11 +1558,7 @@ a {
   background-color: var(--success);
 }
 /* ================= */
-.footer-subscribe-field {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-}
+
 /* .footer-subscribe-form {
   /* display: flex; */
 
